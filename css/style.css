@@ -7,6 +7,11 @@ body{
     line-height: 26px;
 }
 
+.wrap {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
 }
@@ -15,20 +20,93 @@ h1 {
     font-size: 80px;
     font-weight: 600;
     color: #192b59;
-    text-transform: uppercase;
+    max-width: 540px;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    margin-bottom: 65px;
+    margin-left: -5px;
+
 }
 .nav {
     font-size: 12px;
     font-weight: 700;
     color: #6e7ea9;
     text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    text-align: center;
 } 
 
-.btn-free{
-    color: #fff;
-    font-weight: 400;
-    background-color: #1085e4;
+.nav>li {
+    padding: 0px 15px;
 }
+
+
+
+.btn-primary {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #1085e4;
+    padding: 21px 41px;
+    border-radius: 30px;
+    letter-spacing: 2.5px;
+    border: 1px solid #1085e4;
+}
+
+/* псевдокласс */
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+
+
+.btn-secondary {
+    color: #7e8bae;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #cbdbe8;
+    padding: 21px 41px;
+    border-radius: 30px;
+    letter-spacing: 2.4px;
+    border: 1px solid #cbdbe8;
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+}
+
+.btn-group a+a{
+    margin-left: 15px;
+}
+
+.btn-free{
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1.9px;
+    padding: 21px 54px;
+}
+
+.btn-info {
+    color: #8085b1;
+    background: transparent;
+    border: 1px solid #dce1e5;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 21px 62px;
+    border-radius: 30px;
+    letter-spacing: 2.5px;
+}
+
+.btn-choosepl {
+    padding: 21px 62px;
+}
+
 
 .grid h2{
     font-size: 40px;
@@ -67,17 +145,12 @@ h1 {
     font-weight: 700;
 }
 
-.button-sub {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-    background-color: #1085e4;
-}
 
 .page-software h2 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    
 }
 
 .page-software dt {
@@ -89,12 +162,29 @@ h1 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
+    max-width: 500px;
 }
+
 
 .page-stat span {
     font-size: 14px;
     color: #1085e4;
     display: block;
+}
+
+.title-h2 {
+    letter-spacing: -1.5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.title-h2 span {
+    font-size: 14px;
+    color: #1085e4;
+    display: block;
+    letter-spacing:  3px;
+    margin-bottom: 15px;
 }
 
 .page-app h2 {
@@ -122,9 +212,10 @@ h1 {
 }
 
 .page-edit a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1085e4
+    font-size: 12px;
+    font-weight: 700;
+    padding: 21px 60px;
+    letter-spacing: 2.4px;
 }
 
 .page-screen h2 {
@@ -137,4 +228,37 @@ h1 {
     font-size: 14px;
     color: #1085e4;
     display: block;
+}
+
+
+.list-stat {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.list-stat>li {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1085e4;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+}
+
+.list-stat>li span {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    color: #bacbdc;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*page */
+.page-stat {
+    background-color: #edf6ff;
+    padding: 115px 0 95px 0;
 }
