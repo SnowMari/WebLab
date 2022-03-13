@@ -40,6 +40,16 @@ h1 {
     position: relative;
 }
 
+.title-h2 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #192b59;
+    letter-spacing: -2.1px;
+    line-height: 1.2;
+}
+
+
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -66,7 +76,7 @@ h1 {
 
 .nav>li {
     padding: 0 18.9px;
-    letter-spacing: 2.6px;
+    letter-spacing: 1.9px; 
 
 }
 
@@ -91,7 +101,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     background-color: #1085e4;
-    padding: 21px 41px;
+    padding: 21px 37px;
     border-radius: 30px;
     letter-spacing: 2.5px;
     border: 1px solid #1085e4;
@@ -226,14 +236,81 @@ h1 {
 /* блок page-subscribe */
 
 .page-subscribe {
-    background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
-    margin-top: 116px;
-    padding: 30px 0px;
+    background: rgba(10,32,144,1);
+background: -moz-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+background: -webkit-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -o-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: -ms-linear-gradient(left, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+background: linear-gradient(to right, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+    margin-top: -13px;
+    padding: 48px 0px;
 }
 
-.box-subscr {
+.box-subscribe {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.box-subcribe-child {
+    flex-basis: 49%;
+    margin-left: -22px;
+}
+
+/* для элемента input внутри класса box-subscribe-user прописываем правила для цвета
+подсказки*/
+.box-subscribe-user input::-webkit-input-placeholder {
+    color: #b1c3ee;
+}
+.box-subscribe-user input::-moz-placeholder {
+    color: #b1c3ee;
+}
+.box-subscribe-user input:-moz-placeholder {
+    color: #b1c3ee;
+}
+.box-subscribe-user input:-ms-input-placeholder {
+    color: #b1c3ee;
+}
+
+.box-subscribe-user input {
+    border: 2px solid #3f5cb1;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 45px;
+    background-color: transparent;
+    padding: 25px 230px 25px 37px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+   /* box-shadow: 10px 20px 30px rgba(146, 226, 250, 0.5); */
+}
+
+/*Уберем рамку, которая возникает при фокусе поля input*/
+.box-subscribe-user input:focus {
+    outline: none; /*создание внешних рамок для элемента. */
+}
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+    outline: none;
+}
+
+/* Размещение кнопки subscribe «поверх» поля input */
+.box-subscribe-user {
+    position: relative;
+}
+
+.forb {
+    padding: 24px;
+    left: -22px;
+    width: 539px;
+}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    padding: 17px 50px;
 }
 
 .page-subscribe span {
@@ -243,29 +320,30 @@ h1 {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-top: 64px;
-    margin-bottom: 30px;
-
+    margin-top: -21px;
+    margin-bottom: 20px; 
 }
 
-.page-subscribe h2 {
-    font-size: 40px;
+.page-subscribe .title-h2 {
+    font-size: 47px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
+    margin-bottom: 34px;
+    letter-spacing: -0.1px;
 }
 
 .page-subscribe p {
     font-size: 18px;
     font-weight: 400;
     color: #dfe8ff;
-    max-width: 405px;
+    margin-top: -10px;
+    max-width: 440px;
 }
 
 .page-software h2 {
     font-size: 40px;
     color: #192b59;
     font-weight: 700;
-    
 }
 
 
@@ -288,23 +366,7 @@ h1 {
     margin-bottom: 76px;
 }   
 
-.title-h2 {
-    font-size: 39px;
-    font-weight: 600;
-    color: #192b59;
-    letter-spacing: -0.7px;
-    line-height: 1.2;
-}
 
-.title-h2 span {
-    display: block;
-    font-size: 18px;
-    font-weight: 800;
-    color: #1085e4;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing:  3px;
-}
 
 
 .page-app h2 {
