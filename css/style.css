@@ -40,6 +40,7 @@ h1 {
     position: relative;
 }
 
+
 .title-h2 {
     font-size: 39px;
     font-weight: 600;
@@ -47,8 +48,6 @@ h1 {
     letter-spacing: -2.1px;
     line-height: 1.2;
 }
-
-
 
 .wrap {
     max-width: 1110px;
@@ -105,6 +104,7 @@ h1 {
     border-radius: 30px;
     letter-spacing: 2.5px;
     border: 1px solid #1085e4;
+    transition: 0.3s;
 }
 
 /* псевдокласс */
@@ -124,6 +124,7 @@ h1 {
     border-radius: 30px;
     letter-spacing: 2.4px;
     border: 1px solid #cbdbe8;
+    transition: 0.3s;
 }
 
 .btn-secondary:hover {
@@ -139,6 +140,7 @@ h1 {
     font-size: 12px;
     letter-spacing: 1.9px;
     padding: 21px 54px;
+    transition: 0.3s;
 }
 
 .btn-info {
@@ -151,6 +153,7 @@ h1 {
     padding: 21px 62px;
     border-radius: 30px;
     letter-spacing: 2.3px;
+    transition: 0.3s;
 }
 
 .btn-info:hover {
@@ -162,6 +165,112 @@ h1 {
 .btn-choosepl {
     padding: 21px 62px;
 }
+
+/*блок page-grid*/
+
+.page-grid {
+    padding: 100px 100px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas: " a b c " "d b c" "d e f" "g e f" "g h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px;
+    padding: 73px 0px 74px 10px;
+}
+
+.grid-icon {
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+/* размещаем иконки*/
+.grid-icon1 {
+    background-image: url(../img/gridicon1.png);
+    width: 55px;
+    height: 70px;
+}
+
+.grid-icon2 {
+    background-image: url(../img/gridicon2.png);
+    width: 73px;
+    height: 70px;
+}
+
+.grid-icon3 {
+    background-image: url(../img/gridicon3.png);
+    width: 55px;
+    height: 70px;
+}
+
+.grid-icon4 {
+    background-image: url(../img/gridicon4.png);
+    width: 70px;
+    height: 70px;
+}
+.grid-icon5 {
+    background-image: url(../img/gridicon5.png);
+    width: 75px;
+    height: 70px;
+}
+
+.grid-icon6 {
+    background-image: url(../img/gridicon6.png);
+    width: 74px;
+    height: 70px;
+}
+
+/*классы элементов для управления их положением*/
+
+.grid-item-title {
+    grid-area: a;
+    padding: 76px 3px 0px 7px;
+}
+
+.grid-item1 {
+    grid-area: b;
+    margin-top: 76px;
+    padding-left: 20px;
+}
+.grid-item2 {
+    grid-area: c;
+    margin-top: 76px;
+    padding-left: 20px;
+}
+.grid-item3 {
+    grid-area: d;
+    padding: 42px 0px 0px 12px;;
+    margin-bottom: 13px;
+}
+.grid-item4 {
+    grid-area: e;
+    margin-bottom: 14px;
+    padding: 58px 3px 0px 17px;
+}
+.grid-item5 {
+    grid-area: f;
+    padding-top: 60px;
+    margin-bottom: 14px;
+}
+.grid-item6 {
+    grid-area: g;
+    padding: 21px 0px 0px 23px;
+}
+
+.grid-text {
+    grid-area: h;
+    margin-top: -14px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+
 
 /*блок page-company */
 .page-company {
@@ -206,7 +315,7 @@ h1 {
     height: 69px;
 }
 
-
+/* продолжение гридов */
 .grid h2{
     font-size: 40px;
     color: #192b59;
@@ -215,8 +324,13 @@ h1 {
 
 .grid h2 span {
     font-size: 14px;
-    color: #1085e4;
+    color: #00bffe;
     display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: -21px;
+    margin-bottom: 20px; 
 }
 
 .grid-item h3 {
@@ -311,9 +425,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     top: 33px;
     right: 33px;
     padding: 17px 50px;
+    transition: 0.3s;
 }
 
-.page-subscribe span {
+.wrap span {
     font-size: 14px;
     color: #00bffe;
     display: block;
@@ -340,10 +455,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     max-width: 440px;
 }
 
-.page-software h2 {
-    font-size: 40px;
-    color: #192b59;
+.gt-span span {
+    font-size: 16px;
     font-weight: 700;
+    color: #192b59;
+    text-transform:none;
+    letter-spacing: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.grid-text p {
+    font-weight: 400;
+}
+
+.gt-span {
+    display: flex;
+    color: #1085e4;
+    font-size: 14px;
+}
+
+/* блок page-software */
+
+.software-img {
+    background-image: url(../img/background-for-th.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1005px;
+    position: relative;
+    left: -22px;
+}
+.block-one {
+    background-image: url(../img/backgroundthree.png);
+    display: block;
+    background-repeat: no-repeat;
+    width: 931px;
+    height: 891px;
+    top: 117px;
+    position: absolute;
+    
+}
+
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+
+.page-software h2 {
+    font-size: 50px;
+    color: #192b59;
+    /* font-weight: 700; */
+}
+.page-software .title-h2 {
+    max-width: 800px;
+    margin-top: 28px;
+    margin-bottom: 26px;
 }
 
 
@@ -351,6 +524,58 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     font-size: 16px;
     color: #192b59;
 }
+
+.page-software-list dt {
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd {
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+.page-software-list {
+    margin-top: 30px;
+    height: 278px;
+    /*линия прокрутки*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* стилизация scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:#e2f1f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0391c0f8;
+    border-radius: 20px;
+    border: 2px splid #e2f1f7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00bffe;
+    border-radius: 20px;
+    border: 2px splid #e2f1f76b;
+}
+
+
+.page-software-icon {
+    display: block;
+    background-image: url(..//img/mini-icon.png);
+    background-repeat: no-repeat;
+    height: 189px;
+    background-position: 3px 126px;
+}
+
+/* блок page-stat */
 
 .page-stat {
     background-image: url(..//img/backgroundfour.png);
