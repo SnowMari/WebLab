@@ -505,6 +505,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 
 .page-software-flex>div {
     flex-basis: 55%;
+    margin-right: -125px;
 }
 
 .page-software h2 {
@@ -643,7 +644,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     width: 161px;
     height: 53px;
     margin-top: -7px;
-    box-shadow: --1px 11px 30px rgb(163 163 163 / 69%);
+    box-shadow: -1px 11px 30px rgb(163 163 163 / 69%);
 }
 
 .page-app-img {
