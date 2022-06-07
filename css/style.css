@@ -483,7 +483,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     background-size: cover;
     height: 1005px;
     position: relative;
-    left: -22px;
+    left: -129px;
 }
 
 .block-one {
@@ -494,13 +494,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     height: 891px;
     top: 117px;
     position: absolute;
-    
+    left: 127px;
 }
 
 .page-software-flex {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
 }
 
 
@@ -591,26 +590,114 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     margin-bottom: 76px;
 }   
 
-.page-app h2 {
-    font-size: 40px;
-    color: #192b59;
+/* блок .page-app  */
+
+.page-app {
+    margin-top: 87px;
+    margin-left: 633px;
+    letter-spacing: -1.5px;
+}
+.pa-flex {
+    display: flex;
+    flex-basis: 55%;
+    list-style-type: none;
+}
+.page-app-title {
+    font-size: 50px;
     font-weight: 700;
+    color: #192b59;
 }
 
+.page-app p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 31px;
+}
+
+.page-app-blockone {
+    flex-basis: 55%;
+}
+
+.available {
+    font-size: 16px;
+    color: #c4d2dd;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.google-play {
+    background-image: url(../img/google-play.png);
+    background-repeat: no-repeat;
+    width: 161px;
+    height: 53px;
+    margin-left: -38px;
+    margin-right: 31px;
+    margin-top: -7px;
+    box-shadow: -1px 11px 30px rgb(163 163 163 / 69%);
+}
+
+.apple {
+    background-image: url(../img/apple.png);
+    background-repeat: no-repeat;
+    width: 161px;
+    height: 53px;
+    margin-top: -7px;
+    box-shadow: --1px 11px 30px rgb(163 163 163 / 69%);
+}
+
+.page-app-img {
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    width: 1231px;
+    height: 540px;
+    margin-right: 142px;
+    margin-top: -44px;
+}
+
+
 /*блок page-limp*/
+
+.pl-icon {
+    display: block;
+    background-image: url(..//img/mini-icon.png);
+    background-repeat: no-repeat;
+    height: 189px;
+    background-position: 3px 126px;
+}
+
+.pl-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.pl-flex>div {
+    flex-basis: 55%;
+}
 
 .page-limp {
     background-image: url(..//img/backgroundsix.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 50px;
+    height: 652px;
 }
 
-
-.page-limp h2 {
-    font-size: 40px;
+.pl-block h2 {
+    font-size: 50px;
     color: #192b59;
     font-weight: 700;
+    line-height: 60px;
+    margin-top: 29px;
+    margin-bottom: 27px;
+    letter-spacing: -2.5px;
+}
+
+.pl-block p {
+    font-size: 16px;
+    color: #7581a1;
+    margin-bottom: 52px;
 }
 
 .page-limp a {
@@ -619,18 +706,74 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     color: #fff;
 }
 
+.limp-screen {
+    background-image: url(../img/imgcard.png);
+    background-repeat: no-repeat;
+    width: 452px;
+    height: 353px;
+    margin: 159px -97px 0px -31px;
+}
+
+
+/* блок page-edit */
+
+.page-edit {
+    background-image: url(..//img/backgroundseven.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 692px;
+    margin-bottom: -35px;
+}
+
+.page-edit-icon {
+    display: block;
+    background-image: url(..//img/mini-icon.png);
+    background-repeat: no-repeat;
+    height: 196px;
+    background-position: 3px 134px;
+    margin-bottom: -13px;
+}
+
+.page-edit-flex {
+    display: flex;
+}
+
+.page-edit-flex>div {
+    flex-basis: 55%;
+}
+
 .page-edit h2 {
-    font-size: 40px;
+    font-size: 50px;
     color: #192b59;
     font-weight: 700;
+    line-height: 60px;
+    width: 435px;
+    letter-spacing: -1.9px;
+    margin-bottom: 30px;
+}
+
+.page-edit p {
+    width: 605px;
+    margin-bottom: 50px;
 }
 
 .page-edit a {
     font-size: 12px;
     font-weight: 700;
-    padding: 21px 60px;
+    padding: 21px 64px;
     letter-spacing: 2.4px;
 }
+
+.page-edit-img {
+    background-image: url(../img/st.png);
+    background-repeat: no-repeat;
+    width: 425px;
+    height: 367px;
+    margin-left: 58px;
+    margin-top: 162px
+}
+
+/* блок page-screen */
 
 .page-screen-block {
     background-color: #edf6ff;
@@ -654,6 +797,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     margin-bottom: 27px;
     padding-top: 115px;
 }
+
 .page-screen h2 {
     font-size: 40px;
     font-weight: 600;
