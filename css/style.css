@@ -595,12 +595,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 
 .page-app {
     margin-top: 87px;
-    margin-left: 269px;
+    margin-left: 273px;
     letter-spacing: -1.5px;
-
 }
 .pa-flex {
     display: flex;
+    flex-basis: 55%;
     list-style-type: none;
 }
 .page-app-title {
@@ -611,8 +611,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 
 .page-app p{
     font-size: 16px;
+    letter-spacing: 1px;
     margin-bottom: 31px;
-    width: 579px;
 }
 
 .page-app-blockone {
@@ -652,7 +652,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     background-repeat: no-repeat;
     width: 1231px;
     height: 540px;
-    margin-right: -335px;
+    margin-right: 142px;
     margin-top: -44px;
 }
 
