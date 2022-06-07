@@ -485,6 +485,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     position: relative;
     left: -22px;
 }
+
 .block-one {
     background-image: url(../img/backgroundthree.png);
     display: block;
@@ -495,7 +496,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     position: absolute;
     
 }
-
 
 .page-software-flex {
     display: flex;
@@ -591,9 +591,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     margin-bottom: 76px;
 }   
 
-
-
-
 .page-app h2 {
     font-size: 40px;
     color: #192b59;
@@ -635,13 +632,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     letter-spacing: 2.4px;
 }
 
-.page-screen {
-    text-align: center;
+.page-screen-block {
+    background-color: #edf6ff;
+}
+
+.page-screen{
+    top:50px;
 }
 
 .page-screen, .page-plan {
     text-align: center;
 }
+
 .page-screen span {
     font-size: 18px;
     font-weight: 800;
@@ -650,6 +652,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     text-transform: uppercase;
     letter-spacing: 3.5px;
     margin-bottom: 27px;
+    padding-top: 115px;
 }
 .page-screen h2 {
     font-size: 40px;
@@ -660,7 +663,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 
 .stat-img {
     margin-top: 40px;
-    margin-bottom: -10px;
+    margin-bottom: 125px;
 }
 
 
@@ -690,10 +693,109 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     margin-bottom: 20px;
 }
 
+/* page-clients */
+
+.page-clients-bg {
+    background-image: url(../img/page-clients.svg);
+    background-repeat: no-repeat;
+    height: 400px;
+    left: -98px;
+}
+
+.title-clients {
+    padding: 67px 0px 0px 166px;
+}
+
+.page-clients-bg span {
+    font-size: 18px;
+    color: #85c8ff;
+}
+
+.title-clients h2{
+    color: #fff;
+    margin-bottom: 64px;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-title {
+    margin-bottom: 50px;
+    color: #a7abc8;
+}
+
+.box-elem {
+    flex-basis: 268px;
+    color: #8085b1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px 41px;
+    box-shadow: -1px 11px 30px rgb(166 168 169 / 50%);
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients-img {
+    background-image: url(../img/clients-img.svg);
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    box-shadow: -1px 11px 30px rgb(166 168 169 / 50%);
+}
+
+.name {
+    font-weight: 600;
+    color: #000958;
+    font-size: 22px;
+    letter-spacing: -0.7px;
+    margin-left: 16px;
+    margin-top: 0px;
+}
+
+.position {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    margin-left: 70px;
+    margin-top: -27px;
+}
+
+
+ /* page-plan */
+
+.page-plan {
+    margin-top: 190px;
+}
+
+.page-plan span {
+    color: #1085e4;
+    font-size: 18px;
+}
+
 .box-price {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
+}
+
+.posit {
+    margin-top: -36px;
+}
+
+.page-plan-img {
+    background-image: url(../img/page-plan-line.png);
+    background-repeat: no-repeat;
+    flex-basis: 32%;
+    padding: 90px 0 96px 0;
+    position: relative;
 }
 
 .box-price-item {
@@ -709,9 +811,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
     letter-spacing: -1px;
     margin-bottom: 15px;
     margin-top: 0px;
+    margin-bottom: 72px;
 }
 
-.box-price-item h3 span {
+.box-price-item h3>span {
     font-size: 20px;
 }
 
@@ -736,6 +839,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 
 .box-price-item h3 span:last-child {
     color: #7b8ab2;
+    padding: 16px 0px 0px 168px;
+    margin-bottom: -58px;
 }
 
 .box-price-item.active {
@@ -768,5 +873,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', end
 .box-price-item.active::after {
     display: none;
 }
-
 
